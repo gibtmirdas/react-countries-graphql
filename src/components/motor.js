@@ -62,6 +62,7 @@ class Motor extends Component {
               }}
             </Query>
         </div>
+        {/* TODO Check issues using variable as props of query, currently set as a variable of the getCountry function */}
         <Query query={this.getCountry(currentContinent)}>
           {({ data, loading, error }) => {
             if (loading) return <p>loading...</p>;
