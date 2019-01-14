@@ -1,0 +1,44 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "google"
+  ],
+  "parser": "babel-eslint",
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "plugins": ["react", "jsx-a11y"],
+  "globals": {
+    "alert": true,
+    "confirm": true,
+    "FormData": true,
+    "XMLHttpRequest": true,
+    "document": true,
+    "window": true,
+    "$": true,
+    "jQuery": true,
+    "navigator": true,
+    "fetch": true
+  },
+  "rules": {
+    "no-alert": "warn",
+    "no-invalid-this": "off",
+    "no-use-before-define": [2],
+    "prefer-const": 1,
+    "complexity": [1, 10],
+    "no-console": "off",
+    "require-jsdoc": "off",
+    "max-len": [1, 110],
+    "valid-jsdoc": "off",
+    "arrow-parens": "off",
+    "prefer-destructuring": 2,
+    "camelcase": "off",
+    "react/display-name": "off"
+  }
+}
